@@ -1,0 +1,132 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  min-height: 700px;
+  border: 1px solid black;
+}
+header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  font-style: italic;
+  color: darkred;
+  text-shadow: 5px 5px 10px darkred;
+  text-transform: uppercase;
+}
+nav.menu1 {
+  background-color: #ed9494;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+nav.menu1 ul li {
+  text-align: center;
+  display: inline-block;
+  padding: 0px 20px;
+  list-style-type: none;
+  border-right: 1px solid black;
+}
+nav.menu1 ul li a {
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  height: 450px;
+  padding: 5px 0px;
+}
+nav.menu2 {
+  width: 20%;
+  /* height: 450px; */
+  float: left;
+}
+nav.menu2 ul li {
+  width: 95%;
+  list-style-type: none;
+  background-color: #ed9494;
+  border-radius: 20px;
+  margin: 5px;
+}
+nav.menu2 ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+}
+article {
+  width: 52%;
+  /* height: 450px; */
+  float: left;
+}
+article h2 {
+  background-color: #ed9494;
+  color: darkred;
+  width: 60%;
+  letter-spacing: 5px;
+  padding: 5px;
+}
+article ul {
+  padding-left: 20px;
+}
+article a:visited {
+  color: red;
+}
+aside {
+  width: 28%;
+  /* height: 450px; */
+  float: left;
+  background-color: black;
+  color: white;
+}
+.introduction {
+  width: 90%;
+  padding: 10px;
+}
+.introduction div {
+  margin: 10px 0px;
+}
+.introduction img {
+  width: 100%;
+  height: 100%;
+}
+.information input[type="text"] {
+  width: 45%;
+  height: 45px;
+  margin-right: 20px;
+}
+.information form > div {
+  margin-top: 10px;
+}
+.information select {
+  width: 45%;
+  height: 45px;
+  margin-right: 20px;
+}
+.information textarea {
+  width: 94%;
+  height: 80px;
+}
+.information button {
+  width: 60px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #ed9494;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  clear: both;
+  border: none;
+}
+footer h1 {
+  color: white;
+}

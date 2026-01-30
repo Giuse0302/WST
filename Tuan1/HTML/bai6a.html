@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="24689841" content="NguyenVinhLoi" />
+    <title>Bai 6a</title>
+  </head>
+
+  <body>
+    <form style="background-color: lightskyblue">
+      <table
+        align="center"
+        style="
+          border-radius: 8px;
+          border-spacing: 0;
+          overflow: hidden;
+          border: 1px solid black;
+          background-color: aqua;
+        "
+        width="200"
+      >
+        <tr>
+          <td align="center" style="border-bottom: 3px solid black">
+            <b>Jackson</b>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <b>Electronics</b>
+          </td>
+        </tr>
+      </table>
+      <h1 align="center">Registration Form</h1>
+      <p align="center">Register your Jackson Electronics product here</p>
+      <table>
+        <tr>
+          <td><label for="fname">First Name:</label></td>
+          <td><input type="text" id="fname" name="fname" /></td>
+          <td><label for="lname">Last Name:</label></td>
+          <td><input type="text" id="lname" name="lname" /></td>
+        </tr>
+        <tr>
+          <td><label for="add1">Address #1:</label></td>
+          <td><input type="text" id="add1" name="add1" /></td>
+        </tr>
+        <tr>
+          <td><label>Address #2:</label></td>
+          <td><input type="text" id="add2" name="add2" /></td>
+        </tr>
+        <tr>
+          <td><label for="city">City:</label></td>
+          <td>
+            <input type="text" id="city" name="city" style="width: 100px" />
+          </td>
+          <td><label for="state">State:</label></td>
+          <td><input type="text" id="state" name="state" /></td>
+          <td><label for="zip">Zip:</label></td>
+          <td><input type="text" id="zip" name="zip" /></td>
+        </tr>
+        <tr>
+          <td><label for="country">Country:</label></td>
+          <td>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              value="United States"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="product">Product:</label></td>
+          <td>
+            <select name="product" id="product">
+              <option value="SconMester">SconMester</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="date purchased">Date Purchased:</label>
+          </td>
+          <td>
+            <input type="text" id="date purchased" name="date purchased" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="serial">Serial #:</label>
+          </td>
+          <td>
+            <input type="text" id="serial" name="serial" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="user for">Used for:</label>
+          </td>
+          <td>
+            <input type="radio" id="home" name="user for" value="home" />
+            <label for="home">Home</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              id="educational institution"
+              name="user for"
+              value="educational institution"
+            />
+            <label for="educational institution">Educational Institution</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input
+              type="radio"
+              id="business"
+              name="user for"
+              value="business"
+            />
+            <label for="business">Business</label>
+          </td>
+          <td>
+            <input type="radio" id="other" name="user for" value="other" />
+            <label for="other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input
+              type="radio"
+              id="govemment"
+              name="user for"
+              value="govemment"
+            />
+            <label for="govemment">Govemment</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="system">System (check all that apply):</label>
+          </td>
+          <td>
+            <input type="checkbox" id="windows" name="system" value="windows" />
+            <label for="windows">Windows</label>
+          </td>
+          <td>
+            <input type="checkbox" id="unix" name="system" value="unix" />
+            <label for="unix">UNIX</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input
+              type="checkbox"
+              id="macintosh"
+              name="system"
+              value="macintosh"
+            />
+            <label for="macintosh">Macintosh</label>
+          </td>
+          <td>
+            <input type="checkbox" id="other" name="system" value="other" />
+            <label for="other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="comments">Comments?:</label>
+          </td>
+          <td colspan="5">
+            <textarea name="comments" id="comments"></textarea>
+          </td>
+        </tr>
+        <table align="center">
+          <tr>
+            <td>
+              <input
+                type="button"
+                id="register"
+                name="register"
+                value="Click to register"
+              />
+            </td>
+            <td>
+              <input
+                type="reset"
+                id="cancel"
+                name="cancel"
+                value="Click to cancel"
+              />
+            </td>
+          </tr>
+        </table>
+      </table>
+    </form>
+  </body>
+</html>
