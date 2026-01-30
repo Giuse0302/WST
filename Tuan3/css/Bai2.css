@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 100px 1fr 40px;
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
+}
+header {
+  background-color: #29507b;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 45% 55%;
+  grid-template-areas:
+    "head search"
+    "head nav";
+}
+.head {
+  grid-area: head;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.head img {
+  height: 100%;
+  object-fit: contain;
+}
+.head h1 {
+  color: white;
+  display: block;
+}
+.head p {
+  color: white;
+  display: inline-block;
+}
+.search {
+  grid-area: search;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 10px;
+}
+.search input[type="search"],
+button {
+  background-color: #062650;
+  color: white;
+}
+nav {
+  grid-area: nav;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+nav ul li {
+  background-color: #3c71b4;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+section {
+  display: flex;
+  grid-area: section;
+}
+article {
+  flex: 2;
+}
+article h1 {
+  padding: 20px 0px;
+  border-bottom: 2px dotted black;
+}
+.content {
+  display: flex;
+}
+.content i {
+  color: red;
+}
+.form {
+  flex: 3;
+  padding: 10px;
+}
+.form form {
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 5fr 1fr;
+  grid-template-areas:
+    "name email"
+    "txtname txtemail"
+    "tele sub"
+    "txttele txtsub"
+    "mess mess"
+    "txtmess txtmess"
+    "btn btn";
+  column-gap: 20px;
+  padding: 0px 50px 0px 20px;
+  align-items: flex-end;
+}
+form textarea,
+input[type="text"] {
+  align-self: normal;
+}
+.info {
+  flex: 2;
+  padding: 0px 10px 10px 10px;
+}
+.info p {
+  padding: 20px 0px;
+}
+aside {
+  background-color: lightgrey;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  height: auto;
+}
+aside p {
+  word-spacing: 10px;
+}
+aside a {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+aside img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #3c71b4;
+  grid-area: footer;
+  padding-left: 10px;
+  color: white;
+}
